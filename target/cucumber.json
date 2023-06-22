@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-06-21T03:28:26.166Z",
+        "start_timestamp": "2023-06-22T03:04:32.132Z",
         "before": [
           {
             "result": {
-              "duration": 6439675600,
+              "duration": 6440371000,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,9 @@
         "steps": [
           {
             "result": {
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d114.0.5735.134)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MUSAKALIM\u0027, ip: \u0027192.168.1.193\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.6\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\mkmfr\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52898}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: f0fd6796ebe626d18855106644e36803\n*** Element info: {Using\u003dxpath, value\u003d(//*[text()\u003d\u0027Welcome, Tanvir Patwary!\u0027])[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy24.getText(Unknown Source)\r\n\tat luma.ny.stepdefinitions.LumaStepDef.user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page(LumaStepDef.java:20)\r\n\tat ✽.User already logged in the application and verify the user information on the landing page(file:///C:/Users/mkmfr/eclipse-workspace/Luma_Framework_E2E/./Features/Test.feature:8)\r\n",
+              "duration": 5017623500,
+              "status": "failed"
             },
             "line": 8,
             "name": "User already logged in the application and verify the user information on the landing page",
@@ -35,7 +37,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "User should be able to select jacket from men module",
@@ -46,8 +48,7 @@
           },
           {
             "result": {
-              "duration": 998200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Verify the jacket name on the \"Jupiter All-Weather Trainer\" list",
@@ -64,7 +65,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "User should be able to select the \"S\" and \"Blue\" and \"1\" then click on the add to cart",
@@ -89,7 +90,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "User should be able to click on the cart",
@@ -100,7 +101,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "User should be able to click on the checkout",
@@ -111,7 +112,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "User should be able to enter the shipping details and click on the Next",
@@ -122,7 +123,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "User should be able to verify the shipping address and place the order",
@@ -133,8 +134,7 @@
           },
           {
             "result": {
-              "duration": 999700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "User should be able to verify the order number and get text on the screen \"Thank you for your purchase!\"",

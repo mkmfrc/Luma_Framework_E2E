@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-21T03:28:25Z" name="Default suite" finished-at="2023-06-21T03:28:32Z" duration-ms="7237">
+  <suite started-at="2023-06-22T03:04:31Z" name="Default suite" finished-at="2023-06-22T03:04:43Z" duration-ms="12331">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:luma.ny.myrunner.TestRunner@401f7633]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:luma.ny.myrunner.TestRunner@600b90df]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-21T03:28:25Z" name="Default test" finished-at="2023-06-21T03:28:32Z" duration-ms="7237">
+    <test started-at="2023-06-22T03:04:31Z" name="Default test" finished-at="2023-06-22T03:04:43Z" duration-ms="12331">
       <class name="luma.ny.myrunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:luma.ny.myrunner.TestRunner@401f7633]" started-at="2023-06-21T03:28:25Z" name="setUpClass" finished-at="2023-06-21T03:28:25Z" duration-ms="410" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:luma.ny.myrunner.TestRunner@600b90df]" started-at="2023-06-22T03:04:31Z" name="setUpClass" finished-at="2023-06-22T03:04:31Z" duration-ms="471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:luma.ny.myrunner.TestRunner@401f7633]" started-at="2023-06-21T03:28:25Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T03:28:32Z" duration-ms="6670" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:luma.ny.myrunner.TestRunner@600b90df]" started-at="2023-06-22T03:04:31Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-22T03:04:43Z" duration-ms="11721" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -27,10 +27,55 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUSAKALIM', ip: '192.168.1.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\mkmfr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52898}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0fd6796ebe626d18855106644e36803
+*** Element info: {Using=xpath, value=(//*[text()='Welcome, Tanvir Patwary!'])[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUSAKALIM', ip: '192.168.1.193', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\mkmfr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52898}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f0fd6796ebe626d18855106644e36803
+*** Element info: {Using=xpath, value=(//*[text()='Welcome, Tanvir Patwary!'])[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy24.getText(Unknown Source)
+at luma.ny.stepdefinitions.LumaStepDef.user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page(LumaStepDef.java:20)
+at ✽.User already logged in the application and verify the user information on the landing page(file:///C:/Users/mkmfr/eclipse-workspace/Luma_Framework_E2E/./Features/Test.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:luma.ny.myrunner.TestRunner@401f7633]" started-at="2023-06-21T03:28:32Z" name="tearDownClass" finished-at="2023-06-21T03:28:32Z" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:luma.ny.myrunner.TestRunner@600b90df]" started-at="2023-06-22T03:04:43Z" name="tearDownClass" finished-at="2023-06-22T03:04:43Z" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

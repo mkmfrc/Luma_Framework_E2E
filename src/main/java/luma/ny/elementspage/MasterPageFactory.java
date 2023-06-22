@@ -52,4 +52,13 @@ public class MasterPageFactory extends ParentClass {
 		CommonUtil.actionClick(getClickSignIn());
 	}
 	
+	@FindBy(xpath = "(//*[text()='Welcome, Tanvir Patwary!'])[1]")
+	@CacheLookup
+	private WebElement verifyWelcomeText;
+
+	public WebElement getVerifyWelcomeText() {
+		return verifyWelcomeText;
+	}
+	
+	
 }

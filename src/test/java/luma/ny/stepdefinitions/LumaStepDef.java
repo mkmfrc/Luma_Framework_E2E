@@ -1,25 +1,24 @@
 package luma.ny.stepdefinitions;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import io.cucumber.java.en.*;
+import luma.ny.basepage.ParentClass;
+import luma.ny.elementspage.MasterPageFactory;
+import luma.ny.generic.CommonUtil;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-
-
-
-public class LumaStepDef {
-
+public class LumaStepDef extends ParentClass {
+	
+		MasterPageFactory pf;
+	
 	@Given("User already logged in the application and verify the user information on the landing page")
-	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
+	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page(){
 	  
-
-	    
+		pf = new MasterPageFactory();
+		CommonUtil.getAssertion(pf.getVerifyWelcomeText().getText(), prop.getProperty("WelcomeText") );
 	}
+	
 	@When("User should be able to select jacket from men module")
 	public void user_should_be_able_to_select_jacket_from_men_module() {
-	  
+	 
 	    
 	}
 	@When("Verify the jacket name on the {string} list")
